@@ -36,6 +36,11 @@ class WebAppApplicationTests {
 	    .andDo(print()).andExpect(status().isOk()) 
 	    .andExpect(content() 
 	     .string(containsString("Hello, Cópia de Nathalia!"))); 
+	  
+	  this.mockMvc.perform(get("/NathaliaImitona")) 
+	    .andDo(print()).andExpect(status().isOk()) 
+	    .andExpect(content() 
+	     .string(containsString("Hello, Nathalia Imitona!"))); 
 	 } 
  
 } 

@@ -20,5 +20,10 @@ public class HomeController {
 	 public @ResponseBody String greetingCopiaNathy() { 
 	  return "Hello, Cópia de Nathalia!"; 
 	 } 
+	
+	@RequestMapping("/NathyImitona") 
+	 public @ResponseBody String greetingNathyImitona() { 
+	  return "Hello, Nathalia Imitona!"; 
+	 } 
  
 }
