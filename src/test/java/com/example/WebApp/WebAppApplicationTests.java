@@ -48,6 +48,16 @@ class WebAppApplicationTests {
 	     .string(containsString("Hello, hotfix!"))); 
 	  
 	  
-	 } 
+	 
+	  this.mockMvc.perform(get("/testejenkins")) 
+	    .andDo(print()).andExpect(status().isOk()) 
+	    .andExpect(content() 
+	     .string(containsString("Rodando no Jenkins!"))); 
+	  
+	  
+	 }
+	 
+	 
+
  
 } 

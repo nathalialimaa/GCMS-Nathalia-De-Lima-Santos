@@ -34,5 +34,11 @@ public class HomeController {
 	 public @ResponseBody String greetinghotfix() { 
 	  return "Hello, hotfix!"; 
 	 }
+	
+	@RequestMapping("/testejenkins")
+	public @ResponseBody String testJenkins() {
+	    return "Rodando no Jenkins!";
+	}
+
  
 }
